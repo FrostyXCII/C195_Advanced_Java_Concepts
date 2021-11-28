@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainScreenLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainScreenController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="119.0" layoutY="14.0" prefHeight="38.0" prefWidth="226.0" text="Main Screen" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="149.0" layoutY="101.0" prefHeight="170.0" prefWidth="166.0" spacing="15.0" AnchorPane.topAnchor="101.0">
+         <children>
+            <Button fx:id="MainCustomersButton" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#MainCustomersButtonHandler" prefHeight="25.0" prefWidth="165.0" text="Customers" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="MainAppointmentsButton" mnemonicParsing="false" onMouseClicked="#MainAppointmentsButtonHandler" prefHeight="25.0" prefWidth="165.0" text="Appointments">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="MainReportsButton" mnemonicParsing="false" onMouseClicked="#MainReportsButtonHandler" prefHeight="25.0" prefWidth="165.0" text="Reports">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="MainExitButton" mnemonicParsing="false" onMouseClicked="#MainExitButtonHandler" prefHeight="25.0" prefWidth="165.0" text="Exit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
